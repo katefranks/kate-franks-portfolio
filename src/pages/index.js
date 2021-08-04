@@ -1,17 +1,14 @@
 // Step 1: Import React
 import * as React from 'react'
-import { Link } from "gatsby"
+import Layout from '../components/layout'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <main>
-      <title>Kate Franks Portfolio</title>
+    <Layout pageTitle="Home Page">
       <h1>Kate Franks Portfolio</h1>
       <p>Software Developer</p>
-      <br />
-      <Link to="/about">About Kate</Link>
-    </main>
+    </Layout>
   )
 }
 
