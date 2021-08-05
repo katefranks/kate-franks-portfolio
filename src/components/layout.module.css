@@ -4,7 +4,11 @@
   font-family: sans-serif;
 }
 .heading {
+  /* color: #B94479; */
   color: rebeccapurple;
+  /* background-image: linear-gradient(90deg,var(--theme-ui-colors-purple-60,#663399),var(--theme-ui-colors-magenta-50,#bc027f),var(--theme-ui-colors-orange-70,#f67300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .nav-links {
   display: flex;
