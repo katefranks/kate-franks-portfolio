@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
+  btn,
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText,
-  siteTitle
+  siteTitle,
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -34,6 +35,11 @@ const Layout = ({ pageTitle, children }) => {
           <li className={navLinkItem}>
             <Link to="/blog" className={navLinkText}>
               Blog
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/contact" className={navLinkText}>
+              Contact
             </Link>
           </li>
         </ul>
