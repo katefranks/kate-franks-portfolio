@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Blog">
-      <h1>👷 Currently Under<br/> Construction 🛠️</h1>
+      <h1>👷 This Page is Currently Under Construction 🛠️</h1>
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>

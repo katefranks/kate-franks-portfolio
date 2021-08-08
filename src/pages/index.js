@@ -10,9 +10,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout pageTitle="There's always a reason to smile...">
+    <Layout pageTitle="👷 This site is currently under construction, please check back soon. 🛠️">
+    <h2>I'm learning GatsbyJS to build this site!</h2>
     <a style={{textDecoration :"none"}} href="/contact">
-      <div className={btn}>Let's find it!</div>
+      <div className={btn}>There's always a reason to smile... Let's find it!</div>
     </a>
       <StaticImage
         alt="Kate Franks"
