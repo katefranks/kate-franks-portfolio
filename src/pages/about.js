@@ -9,7 +9,7 @@ import {
 // Step 2: Define your component
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About">
+    <Layout pageTitle="Kate Franks">
       <p>Software Developer | Endurance Sports Enthusiast | Dog Lover</p>
       <StaticImage
         className={aboutImage}

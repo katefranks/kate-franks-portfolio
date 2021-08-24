@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
-  btn,
   container,
   heading,
   navLinks,

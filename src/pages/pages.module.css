@@ -44,13 +44,10 @@
 .contact-kate{
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .contact-links{
   text-decoration: none;
   color: #1E1D21;
-}
-
-.email{
-  margin: none;
 }

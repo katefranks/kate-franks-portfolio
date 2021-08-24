@@ -17,6 +17,13 @@
   font-weight: 700;
   margin: 3rem 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .site-title {
+    font-size: 2rem;
+  }
+}
+
 .heading {
   color: #1E1D21;
 }
@@ -34,7 +41,7 @@
   color: #1E1D21;;
 }
 
-.btn{
+/* .btn{
   background: linear-gradient(103deg, #EC1D97, #e00082);
   background-color: rgb(224, 0, 130);
   background-position: 0 0;
@@ -43,7 +50,7 @@
   padding: 17px 30px 19px;
   border-radius: 6px;
   transition: background-position .25s ease, box-shadow .25s ease;
-}
+} */
 
 .site-footer{
   position: fixed;
