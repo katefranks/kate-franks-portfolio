@@ -19,6 +19,12 @@
 
 .project-cover-image{
   max-width: 300px;
-  border: 5px solid blue;
+  border: 5px solid #a38653;
+  border-radius: 3px;
   margin: 20px;
+  box-shadow: 2px 2px 5px #202124;
+}
+
+.about-image{
+  max-width: 500px;
 }

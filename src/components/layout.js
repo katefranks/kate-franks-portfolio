@@ -8,6 +8,7 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
+  siteFooter,
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -34,11 +35,6 @@ const Layout = ({ pageTitle, children }) => {
             <Link to="/about" className={navLinkText}>About Me</Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-          <li className={navLinkItem}>
             <Link to="/contact" className={navLinkText}>
               Contact
             </Link>
@@ -50,10 +46,17 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-      <footer className="site-footer">
+      <footer className={siteFooter}>
         <p className="footer-text">© 2021 | kateloves2code</p>
       </footer>
     </div>
   )
 }
 export default Layout
+
+// Blog post link:
+// <li className={navLinkItem}>
+//   <Link to="/blog" className={navLinkText}>
+//     Blog
+//   </Link>
+// </li>

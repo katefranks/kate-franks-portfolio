@@ -2,6 +2,9 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import {
+  aboutImage
+} from './pages.module.css'
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -9,6 +12,7 @@ const AboutPage = () => {
     <Layout pageTitle="About">
     <p>Hi, I'm Kate</p>
     <StaticImage
+      className={aboutImage}
       alt="Kate Franks"
       src="../images/katefranks_about.JPG"
     />
