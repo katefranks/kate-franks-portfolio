@@ -31,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
             <Link to="/" className={navLinkText}>Portfolio</Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>About Me</Link>
+            <Link to="/about" className={navLinkText}>About Kate</Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/contact" className={navLinkText}>
@@ -45,8 +45,10 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-      <footer className={siteFooter}>
-        <p className="footer-text">© 2021 | kateloves2code</p>
+      <footer>
+        <div className={siteFooter}>
+          <p className="footer-text">© 2021 | kateloves2code</p>
+        </div>
       </footer>
     </div>
   )

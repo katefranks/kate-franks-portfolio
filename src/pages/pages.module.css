@@ -16,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .project-cover-image{
@@ -35,6 +36,7 @@
   background-color: #1E1D21;
   background-repeat: no-repeat;
   background-size: auto;
+  margin-bottom: 30px;
 }
 
 .mainInfo{

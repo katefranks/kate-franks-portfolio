@@ -1,6 +1,15 @@
 *{
   text-align: center;
 }
+
+body{
+  background: transparent url(../images/mountains_background.jpeg)no-repeat fixed center center/cover;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  z-index: 1;
+}
+
 .container {
   margin: auto;
   /* max-width: 500px; */
@@ -41,17 +50,6 @@
   color: #1E1D21;;
 }
 
-/* .btn{
-  background: linear-gradient(103deg, #EC1D97, #e00082);
-  background-color: rgb(224, 0, 130);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  border: solid 2px #e00083;
-  padding: 17px 30px 19px;
-  border-radius: 6px;
-  transition: background-position .25s ease, box-shadow .25s ease;
-} */
-
 .site-footer{
   position: fixed;
   left: 0;
@@ -60,4 +58,5 @@
   background-color: #FFF;
   color: gray;
   text-align: center;
+  z-index: 2;
 }
