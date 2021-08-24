@@ -15,16 +15,42 @@
 .projectcovers{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-cover-image{
   max-width: 300px;
-  border: 5px solid #a38653;
-  border-radius: 3px;
+  border-radius: 4px;
   margin: 20px;
-  box-shadow: 2px 2px 5px #202124;
+  box-shadow: 2px 2px 6px #202124;
+  background-color: #1E1D21;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .about-image{
   max-width: 500px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #202124;
+  background-color: #1E1D21;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.mainInfo{
+  color: #1E1D21;
+}
+
+.contact-kate{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-links{
+  text-decoration: none;
+  color: #1E1D21;
+}
+
+.email{
+  margin: none;
 }

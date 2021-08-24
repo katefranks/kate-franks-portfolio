@@ -2,7 +2,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import {
-  btn, projectcovers, projectCoverImage
+  btn, projectcovers, projectCoverImage, mainInfo
 } from './pages.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -11,7 +11,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
   return (
     <Layout pageTitle="Portfolio">
-    <h3 className="maininfo">Purpose.Driven.Solutions</h3>
+    <h3 className={mainInfo}>Purpose | Driven | Solutions</h3>
     <section className={projectcovers}>
       <a target="_blank" href="https://mydentalrecords.herokuapp.com/">
         <StaticImage className={projectCoverImage}

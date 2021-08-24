@@ -10,13 +10,12 @@ import {
 const AboutPage = () => {
   return (
     <Layout pageTitle="About">
-    <p>Hi, I'm Kate</p>
-    <StaticImage
-      className={aboutImage}
-      alt="Kate Franks"
-      src="../images/katefranks_about.JPG"
-    />
       <p>Software Developer | Endurance Sports Enthusiast | Dog Lover</p>
+      <StaticImage
+        className={aboutImage}
+        alt="Kate Franks"
+        src="../images/katefranks_about.JPG"
+      />
     </Layout>
   )
 }

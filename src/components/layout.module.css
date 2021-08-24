@@ -1,9 +1,15 @@
+*{
+  text-align: center;
+}
 .container {
   margin: auto;
   /* max-width: 500px; */
   max-width: 1200px;
   padding: 5%;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .site-title {
   font-size: 3rem;
@@ -12,18 +18,20 @@
   margin: 3rem 0;
 }
 .heading {
-  /* color: #EC1D97 */
+  color: #1E1D21;
 }
 .nav-links {
   display: flex;
   list-style: none;
   padding-left: 0;
+  display: flex;
+  justify-content: center;
 }
 .nav-link-item {
   padding-right: 2rem;
 }
 .nav-link-text {
-  color: black;
+  color: #1E1D21;;
 }
 
 .btn{
@@ -35,4 +43,14 @@
   padding: 17px 30px 19px;
   border-radius: 6px;
   transition: background-position .25s ease, box-shadow .25s ease;
+}
+
+.site-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFF;
+  color: gray;
+  text-align: center;
 }
