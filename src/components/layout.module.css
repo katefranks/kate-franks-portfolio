@@ -1,6 +1,8 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  /* max-width: 500px; */
+  max-width: 1200px;
+  padding: 5%;
   font-family: sans-serif;
 }
 .site-title {

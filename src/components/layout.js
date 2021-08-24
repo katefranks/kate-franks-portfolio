@@ -50,8 +50,8 @@ const Layout = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-      <footer>
-        <p>© 2021 | kateloves2code</p>
+      <footer className="site-footer">
+        <p className="footer-text">© 2021 | kateloves2code</p>
       </footer>
     </div>
   )

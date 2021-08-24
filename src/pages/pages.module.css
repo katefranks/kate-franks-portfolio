@@ -11,3 +11,14 @@
   border-radius: 6px;
   transition: background-position .25s ease, box-shadow .25s ease;
 }
+
+.projectcovers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-cover-image{
+  max-width: 300px;
+  border: 5px solid blue;
+  margin: 20px;
+}
