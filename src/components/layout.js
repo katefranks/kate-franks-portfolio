@@ -22,15 +22,16 @@ const Layout = ({ pageTitle, children }) => {
   `)
   return (
     <div className={container}>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <title>{data.site.siteMetadata.title} | {pageTitle} </title>
+      <header>
+      <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>Home</Link>
+            <Link to="/" className={navLinkText}>Portfolio</Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>About</Link>
+            <Link to="/about" className={navLinkText}>About Me</Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/blog" className={navLinkText}>
@@ -44,10 +45,14 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
+      </header>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <footer>
+        <p>© 2021 | kateloves2code</p>
+      </footer>
     </div>
   )
 }

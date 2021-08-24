@@ -6,7 +6,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 // Step 2: Define your component
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Hi, I'm Kate">
+    <Layout pageTitle="About">
+    <h1>Hi, I'm Kate 👋</h1>
     <StaticImage
       alt="Kate Franks"
       src="../images/katefranks_about.JPG"
