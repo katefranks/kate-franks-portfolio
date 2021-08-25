@@ -1,6 +1,8 @@
 // Step 1: Import React
 import * as React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
+
 import {
   projectcovers, projectCoverImage, mainInfo
 } from './pages.module.css'
@@ -31,7 +33,7 @@ const IndexPage = () => {
           src="../images/restaurant_thumbnail.png"
         />
       </a>
-      <a target="_blank" rel="noreferrer" href="https://fullstack-chat-app-katefranks.herokuapp.com/">
+      <a target="_blank" rel="noreferrer" href="https://katefranks.github.io/sk8/">
         <StaticImage className={projectCoverImage}
           alt="Kate Franks"
           src="../images/sk8_thumbnail.png"
@@ -44,10 +46,14 @@ const IndexPage = () => {
         />
       </a>
       <div>
+      <Link to="/contact" >
+
+
         <StaticImage className={projectCoverImage}
           alt="Kate Franks"
           src="../images/katefranks_about.JPG"
         />
+        </Link>
       </div>
     </section>
     </Layout>
