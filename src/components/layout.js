@@ -7,8 +7,12 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
+  siteHeader,
+  siteLogo,
   siteFooter,
+  titleLogoContainer
 } from './layout.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -23,23 +27,31 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <title>{data.site.siteMetadata.title} | {pageTitle} </title>
-      <header>
-      <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>Portfolio</Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>About Kate</Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/contact" className={navLinkText}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <header className={siteHeader}>
+        <div className={titleLogoContainer}>
+          <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
+          <div className={siteLogo}>
+            <StaticImage
+              alt="kateloves2code logo"
+              src="../images/kateloves2code_logo.png"
+            />
+          </div>
+        </div>
+        <nav>
+          <ul className={navLinks}>
+            <li className={navLinkItem}>
+              <Link to="/" className={navLinkText}>Portfolio</Link>
+            </li>
+            <li className={navLinkItem}>
+              <Link to="/about" className={navLinkText}>About Kate</Link>
+            </li>
+            <li className={navLinkItem}>
+              <Link to="/contact" className={navLinkText}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <h1 className={heading}>{pageTitle}</h1>

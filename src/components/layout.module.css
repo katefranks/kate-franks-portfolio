@@ -12,7 +12,6 @@ body{
 
 .container {
   margin: auto;
-  /* max-width: 500px; */
   max-width: 1200px;
   padding: 5%;
   font-family: sans-serif;
@@ -20,9 +19,14 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
+.siteHeader{
+  width: 100%;
+}
+
 .site-title {
   font-size: 3rem;
-  color: gray;
+  color: #000;
   font-weight: 700;
   margin: 3rem 0;
 }
@@ -31,6 +35,19 @@ body{
   .site-title {
     font-size: 2rem;
   }
+}
+
+.title-Logo-Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.site-Logo{
+  width: 75px;
+  height: 75px;
+  margin: 7px;
 }
 
 .heading {
