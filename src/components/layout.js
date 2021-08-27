@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container,
   heading,
+  footerContainer,
   navLinks,
   navLinkItem,
   navLinkText,
@@ -30,12 +31,6 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteHeader}>
         <div className={titleLogoContainer}>
           <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
-          <div className={siteLogo}>
-            <StaticImage
-              alt="kateloves2code logo"
-              src="../images/kateloves2code_logo.png"
-            />
-          </div>
         </div>
         <nav>
           <ul className={navLinks}>
@@ -59,13 +54,24 @@ const Layout = ({ pageTitle, children }) => {
       </main>
       <footer>
         <div className={siteFooter}>
-          <p className="footer-text">© 2021 | kateloves2code</p>
+          <div className={footerContainer}>
+            <p className="footer-text">© 2021 | kateloves2code | </p>
+            <div className={siteLogo}>
+              <StaticImage
+                alt="kateloves2code logo"
+                src="../images/kateloves2code_logo.png"
+              />
+            </div>
+          </div>
         </div>
       </footer>
     </div>
   )
 }
 export default Layout
+
+// site logo
+
 
 // Blog post link:
 // <li className={navLinkItem}>
